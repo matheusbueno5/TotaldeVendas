@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <h1> Atividade 06 </h1> 
+    <p>Loja: <span id="nomeloja"></span>  </p> 
+    <p>Total Vendas primeiro semestre: <span id="primeirosemestre"></span>  </p> 
+    <p>Total Vendas segundo semestre: <span id="segundosemestre"></span> </p> 
+    <p>Total Vendas Ano: <span id="totalano"></span> </p> 
+    <script> 
+    let loja; 
+    let janeiro; 
+    let fevereiro; 
+    let marco; 
+    let abril; 
+    let maio; 
+    let junho; 
+    let julho; 
+    let agosto; 
+    let setembro; 
+    let outubro; 
+    let novembro; 
+    let dezembro; 
+    let semestre1; 
+    let semestre2; 
+    let totalano; 
+    loja = prompt("Digite o nome da loja."); 
+    janeiro = Number(prompt("Digite o total de vendas em Janeiro.")); 
+    fevereiro = Number(prompt("Digite o total de vendas em Fevereiro."));
+    marco = Number(prompt("Digite o total de vendas em Março.")); 
+    abril = Number(prompt("Digite o total de vendas em Abril.")); 
+    maio = Number(prompt("Digite o total de vendas em Maio.")); 
+    junho = Number(prompt("Digite o total de vendas em Junho.")); 
+    julho = Number(prompt("Digite o total de vendas em Julho.")); 
+    agosto = Number(prompt("Digite o total de vendas em Agosto.")); 
+    setembro = Number(prompt("Digite o total de vendas em Setembro.")); 
+    outubro = Number(prompt("Digite o total de vendas em Outubro.")); 
+    novembro = Number(prompt("Digite o total de vendas em Novembro.")); 
+    dezembro = Number(prompt("Digite o total de vendas em Dezembro.")); 
+    semestre1 = janeiro+fevereiro+marco+abril+maio+junho; 
+    semestre2 = julho+agosto+setembro+outubro+novembro+dezembro; 
+    totalano = semestre1 + semestre2; 
+    document.getElementById("nomeloja").innerHTML = loja; 
+    document.getElementById("primeirosemestre").innerHTML = semestre1; 
+    document.getElementById("segundosemestre").innerHTML = semestre2; 
+    document.getElementById("totalano").innerHTML = totalano; 
+    </script>  
+    
+</body>
+</html>
